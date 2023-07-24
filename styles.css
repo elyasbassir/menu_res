@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.menu-item {
+    background-color: #555;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 160px;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#search {
+    padding: 5px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.item-description {
+    font-size: 14px;
+}
+
+/* Additional styling to make the menu more presentable */
+h1, h2 {
+    color: #fff;
+}
+
+.menu-item p {
+    color: #ddd;
+}
+input[type="text"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    transition: border-color 0.3s ease;
+    width: 250px;
+    background-color: #f2f2f2;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #6a99d1;
+    box-shadow: 0 0 5px #6a99d1;
+}
+
+input[type="text"]::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+/* Optional: Add an icon inside the input */
+.input-container::before {
+    content: "\f007"; /* Font Awesome icon code */
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 16px;
+}
